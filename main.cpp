@@ -1,19 +1,42 @@
+#include <vulkan/vulkan.h>
 
-#include "app.hpp"
-
-#include <cstdlib>
 #include <iostream>
 #include <stdexcept>
+#include <cstdlib>
 
-int main() {
-  poke::App app{};
+namespace poke {
+    class MainApp {
+        public:
+            void start() {
+                initVulkan();
+                mainLoop();
+                cleanup();
+            }
 
-  try {
-    app.run();
-  } catch (const std::exception &e) {
-    std::cerr << e.what() << '\n';
-    return EXIT_FAILURE;
-  }
+        private:
+            void initVulkan() {
 
-  return EXIT_SUCCESS;
-}
+            }
+
+            void mainLoop() {
+
+            }
+
+            void cleanup() {
+
+            }
+    };
+};
+
+    int main() {
+        MainApp app;
+        
+        try {
+            app.run()
+        } catch (const std::exception& e) {
+            std::cerr << e.what() << std::endl;
+            return EXIT_FAILURE;
+        }
+
+        return EXIT_SUCCESS;
+    }
