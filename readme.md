@@ -1,4 +1,7 @@
-# Poke-Engine
-Hello world
+# Poke
+## THIS PROJECT IS IN EARLY ALPHA
+### About the project
+The aim of the poke project is to create a graphics/game engine that portrays game dev in an easy, but transferable-to-later-on way. Using the tool, users will have the ability to add in objects and have poke do the heavy lifting, or design an engine themselves using their own shaders, code, etc.
 
-![engine-diagram](https://lucid.app/publicSegments/view/afc941e8-9813-40f9-a829-e50bcdbe1ee1/image.png)
+### How to contribute
+There are no rules yet, if you for some reason want to contribute to this far from fully fleshed out project, just send a pull request with your features
