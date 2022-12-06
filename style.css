@@ -1,0 +1,112 @@
+/* The deafult theme is based on catpuccin macciatto */
+/* I love that color scheme :) */
+
+:root {
+	--Text: #cad3f5;
+	--Subtext1: #b8c0e0;
+	--Subtext0: #a5adcb;
+	--Overlay2: #939ab7;
+	--Overlay1: #8087a2;
+	--Overlay0: #6e738d;
+	--Surface2:	#5b6078;
+	--Surface1:	#494d64;
+	--Surface0: #363a4f;
+	--Base: #24273a;
+	--Mantle: #1e2030;
+	--Crust: #181926;
+}
+
+body {
+    background-color: var(--Mantle);
+    color: var(--Text);
+}
+
+.fira_sans {
+    font-family: 'Fira Sans', sans-serif;
+    }
+
+#top-bar {
+	height: 40px;
+	width: 100%;
+	background-color: var(--Crust);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#top-bar #menu-button {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background-color: var(--Crust);
+	border: none;
+}
+
+#top-bar #menu-button:hover {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background-color: var(--Base);
+	border: none;
+
+
+}
+
+#top-bar #menu-button #menu-icon {
+	color: var(--Text);
+	position: absolute;
+	font-size: 20px;
+	top: 0;
+	left: 0;
+	margin: 10px;
+
+}
+
+#top-bar #title-header {
+	margin: auto;
+	line-height: 50px;
+  	text-align: center;
+}
+
+@keyframes sidebar-open {
+	from {left: 0;}
+	to {left: 50;}
+}
+
+#sidebar {
+	position: absolute;
+	height: 100%;
+	width: 30%;
+	background-color: var(--Base);
+	margin-top: 34px;
+	left: 0;
+	visibility: hidden;
+}
+
+#sidebar #sidebar-x #sidebar-x-icon {
+	color: var(--Text);
+	position: absolute;
+	font-size: 20px;
+	top: 0;
+	left: 0;
+	margin: 10px;
+
+}
+
+#sidebar #sidebar-x {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background-color: var(--Base);
+	border: none;
+}
+
+#sidebar #sidebar-x:hover {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background-color: var(--Surface0);
+	border: none;
+
+
+}
