@@ -1,44 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title">Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
-    <script src="https://kit.fontawesome.com/114fce564d.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="top-bar">
-        <button id="menu-button">
-            <i class="fa-solid fa-bars" id="menu-icon"></i>
-        </button>
-        <h5 id="title-header">0</h5>
-    </div>
-
-    <script>
-        document.getElementById("title-header").innerHTML = document.getElementById("title").textContent;
-    </script>
-
-    <div id="sidebar" class="active">
-        <button id="sidebar-x">
-            <i class="fa-solid fa-xmark" id="sidebar-x-icon"></i>
-        </button>
-    </div>
-
-    <script>
-        var menu_button = document.querySelector("#menu-button");
-        var sidebar = document.querySelector("#sidebar");
-
-
-
-        menu_button.addEventListener('click', () => {
-            sidebar.style.visibility = "visible";
-        })
-
-
-    </script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

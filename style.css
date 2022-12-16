@@ -17,96 +17,45 @@
 }
 
 body {
-    background-color: var(--Mantle);
+    background-color: var(--Base);
     color: var(--Text);
 }
 
 .fira_sans {
     font-family: 'Fira Sans', sans-serif;
-    }
-
-#top-bar {
-	height: 40px;
-	width: 100%;
-	background-color: var(--Crust);
-	position: absolute;
-	left: 0;
-	top: 0;
 }
 
-#top-bar #menu-button {
-	position: absolute;
-	height: 40px;
-	width: 40px;
-	background-color: var(--Crust);
-	border: none;
+#tabs button.tab-inactive {
+	background-color: var(--Mantle);
 }
 
-#top-bar #menu-button:hover {
-	position: absolute;
-	height: 40px;
-	width: 40px;
-	background-color: var(--Base);
-	border: none;
-
-
-}
-
-#top-bar #menu-button #menu-icon {
-	color: var(--Text);
-	position: absolute;
-	font-size: 20px;
-	top: 0;
-	left: 0;
-	margin: 10px;
-
-}
-
-#top-bar #title-header {
-	margin: auto;
-	line-height: 50px;
-  	text-align: center;
-}
-
-@keyframes sidebar-open {
-	from {left: 0;}
-	to {left: 50;}
-}
-
-#sidebar {
-	position: absolute;
-	height: 100%;
-	width: 30%;
-	background-color: var(--Base);
-	margin-top: 34px;
-	left: 0;
-	visibility: hidden;
-}
-
-#sidebar #sidebar-x #sidebar-x-icon {
-	color: var(--Text);
-	position: absolute;
-	font-size: 20px;
-	top: 0;
-	left: 0;
-	margin: 10px;
-
-}
-
-#sidebar #sidebar-x {
-	position: absolute;
-	height: 40px;
-	width: 40px;
-	background-color: var(--Base);
-	border: none;
-}
-
-#sidebar #sidebar-x:hover {
-	position: absolute;
-	height: 40px;
-	width: 40px;
+#tabs button.tab-inactive:hover {
+	text-decoration: underline;
 	background-color: var(--Surface0);
-	border: none;
+}
 
 
+#tabs button.tab-active {
+	background-color: var(--Crust);
+	cursor: default;
+}
+
+#tabs button {
+	left: 0px;
+	top: 0px;
+	float: left;
+  	border: none;
+	cursor: pointer;
+	padding: 40px 65px;
+	margin: -8px;
+	transition: 0.2s;
+}
+
+.tab-contents {
+	width: 100%;
+	height: calc(100% - 40px);
+	background-color: var(--Crust);
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
