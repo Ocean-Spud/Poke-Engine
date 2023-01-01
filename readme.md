@@ -10,7 +10,7 @@
 Poke Aims to create an all-purpose use case engine powered by [Vulkan®](https://www.vulkan.org/), that portrays game development, 3D rendering, etc. in an intuitive way for all skill levels of developers, artists, and creative thinkers alike.
 ## Contributing
 (**To Be Written**)
-### Required Libraries
+## Required Libraries
 (**More To Be Written**)
 
 - NodeJS
